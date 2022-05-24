@@ -22,10 +22,10 @@ pipeline {
 apiVersion: v1
 kind: Pod
 metadata:
-  namespace: default
+  namespace: jenkins
 spec:
   # Use service account that can deploy to all namespaces
-  serviceAccountName: jenkins-1647253759
+  serviceAccountName: myjenkins
   containers:
   - name: maven
     image: maven:3.8.1-openjdk-16
